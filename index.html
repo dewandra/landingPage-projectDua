@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>project 2</title>
+    <title>BestCarService</title>
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <!-- FONTAWESOME -->
     <link
@@ -15,22 +23,429 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- BOOTSTRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a {
+        color: #000;
+        list-style: none;
+      }
+    </style>
   </head>
   <body>
-    <a href=""><i class="fa-solid fa-user"></i></a>
-
     <!-- SECTION A HEADER & BANNER -->
-    <!-- SECTION B PRODUCT FEATURES 1 & 2 -->
-    <!-- SECTION C ABOUT & PRICCING -->
-    <!-- SECTION D CONTACT & FOOTER -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">BestCarService</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="margin-left: 20%"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">SERVICE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button
+              class="btn btn-outline-light mx-2 rounded-pill"
+              type="submit"
+            >
+              Log in
+            </button>
+            <button class="btn btn-outline-light rounded-pill" type="submit">
+              Signup
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- section home -->
+    <section class="text-dark p-5 text-center text-sm-start" id="home">
+      <div class="container py-5">
+        <div class="d-sm-flex align-item-center justify-content-between py-5">
+          <div class="">
+            <h3 class="my-4">Make a car checkup in your Service</h3>
+            <p class="lead my-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              perspiciatis eveniet itaque quae beatae commodi quibusdam qui
+              quidem ab iure!
+            </p>
+            <button class="btn btn-outline-dark">Check</button>
+          </div>
+          <a href="">
+            <img src="img/car.png" alt="" width="450px" />
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <!-- SECTION B PRODUCT FEATURES 1 & 2 -->
+    <!-- client -->
+    <section class="p-5" id="client">
+      <div class="container py-3">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light p-2">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa fa-car-crash"></i>
+                </div>
+                <h3 class="card-title">Car Service</h3>
+                <p class="card-text">12k</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light p-2">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa fa-car-on"></i>
+                </div>
+                <h3 class="card-title">Car Repair</h3>
+                <p class="card-text">12k</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light p-2">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa fa-car-rear"></i>
+                </div>
+                <h3 class="card-title">Car Wash</h3>
+                <p class="card-text">12k</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light p-2">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa fa-person"></i>
+                </div>
+                <h3 class="card-title">Member</h3>
+                <p class="card-text">12k</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service -->
+    <section class="p-3 text-center" id="service">
+      <div class="container py-5">
+        <div class="py-5">
+          <h1 class="my-4">-- Our Service --</h1>
+          <div class="col-md">
+            <div class="card p-2 mb-3">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa fa-car-crash"></i>
+                </div>
+                <h3 class="card-title">Car Service</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Harum quam porro nisi ex ipsa qui consequatur maxime
+                  reprehenderit, ipsam officiis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card p-2 mb-3">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa fa-car-on"></i>
+                </div>
+                <h3 class="card-title">Car Repair</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Explicabo nulla, quam commodi repudiandae libero laudantium
+                  facere molestias quaerat quod aliquam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card p-2 mb-3">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa fa-car-rear"></i>
+                </div>
+                <h3 class="card-title">Car Wash</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus amet sunt distinctio, totam autem id consectetur!
+                  Maxime sapiente temporibus tempora.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card p-2">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa fa-person"></i>
+                </div>
+                <h3 class="card-title">Member</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquid nobis similique eius harum nihil doloribus repudiandae
+                  itaque reiciendis perspiciatis ex?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION C ABOUT & PRICING -->
+    <!-- about -->
+    <section class="p-5" id="about">
+      <div class="container py-5">
+        <h1 class="my-4 text-center">-- About Us --</h1>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md">
+            <a href=""
+              ><img
+                src="img/car2.png"
+                class="img-fluid"
+                alt=""
+                style="transform: rotate(-1, 1)"
+                width="800px"
+            /></a>
+          </div>
+          <div class="col-md">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut
+              id officia quidem architecto velit molestiae expedita fugit saepe
+              impedit rem, assumenda soluta vero a suscipit repellendus
+              distinctio delectus voluptates nesciunt nulla?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut
+              id officia quidem architecto velit molestiae expedita fugit saepe
+              impedit rem, assumenda soluta vero a suscipit repellendus
+              distinctio delectus voluptates nesciunt nulla?
+            </p>
+            <a href="" class="btn btn-outline-dark">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- pricing -->
+    <section class="p-5" id="pricing">
+      <div class="container py-5">
+        <div class="row text-center g-4">
+          <h1 class="text-center">-- Our Pricing --</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, quasi
+            impedit nostrum deleniti earum laborum dignissimos? Modi tempora
+            voluptatem vero harum autem, illo ducimus mollitia, numquam
+            perferendis quidem atque eveniet.
+          </p>
+          <div class="col-md">
+            <div class="card bg-dark text-light p-2">
+              <div class="card-body text-center">
+                <h4 class="card-title">Standard</h4>
+                <h2 class="card-text">$200</h2>
+                <p><i class="fa fa-car-rear"></i> Car Wash</p>
+                <p><i class="fa fa-car-on"></i> Car Repair</p>
+                <p><i class="fa fa-car-crash"></i> Car Service</p>
+                <p><i class="fa fa-gear"></i> Maintenance</p>
+                <a href="" class="btn btn-outline-light">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light p-2">
+              <div class="card-body text-center">
+                <h4 class="card-title">Professional</h4>
+                <h2 class="card-text">$200</h2>
+                <p><i class="fa fa-car-rear"></i> Car Wash</p>
+                <p><i class="fa fa-car-on"></i> Car Repair</p>
+                <p><i class="fa fa-car-crash"></i> Car Service</p>
+                <p><i class="fa fa-gear"></i> Maintenance</p>
+                <a href="" class="btn btn-outline-light">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light p-2">
+              <div class="card-body text-center">
+                <h4 class="card-title">Premium</h4>
+                <h2 class="card-text">$200</h2>
+                <p><i class="fa fa-car-rear"></i> Car Wash</p>
+                <p><i class="fa fa-car-on"></i> Car Repair</p>
+                <p><i class="fa fa-car-crash"></i> Car Service</p>
+                <p><i class="fa fa-gear"></i> Maintenance</p>
+                <a href="" class="btn btn-outline-light">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION D CONTACT & FOOTER -->
+    <!-- contact -->
+    <section class="p-5" id="contact">
+      <div class="container py-5">
+        <h1 class="my-4 text-center">-- Contact Us --</h1>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md">
+            <div class="row">
+              <div class="col-md">
+                <h5 class="text-muted">Mobile Number</h5>
+                <p class="text-muted">081234567897653</p>
+              </div>
+              <div class="col-md">
+                <h5 class="text-muted">Email Address</h5>
+                <p class="text-muted">bestcarservice@service.com</p>
+              </div>
+            </div>
+            <h4 class="mb-3">Make An Appointment</h4>
+            <div class="row mb-3">
+              <div class="col-sm">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputemail"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="col-sm">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputemail"
+                  placeholder="Your Email"
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputemail"
+                  placeholder="Phone"
+                />
+              </div>
+              <div class="col-sm">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputemail"
+                  placeholder="Car Model & Year"
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputemail"
+                  placeholder="Your Message"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <a href="" class="btn btn-outline-dark">Send Message</a>
+            </div>
+          </div>
+          <div class="col-md">
+            <a href=""><img src="img/car3.png" class="img-fluid" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="contact" class="page-footer p-5 text-md-left bg-secondary">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mt-2">
+            <h5>BestCarService</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+              illum!
+            </p>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-map"></i>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-2">
+            <h5>Services</h5>
+            <li>Car Service</li>
+            <li>Car Repair</li>
+            <li>Car Wash</li>
+            <li>Car Maintenance</li>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-2">
+            <h5>Page Links</h5>
+            <li>Our Cient</li>
+            <li>Service</li>
+            <li>About Us</li>
+            <li>Our Pricing</li>
+            <li>Contact Us</li>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-2">
+            <h5>Location</h5>
+            <li style="list-style: none">
+              <i class="fa-solid fa-location-dot"></i>
+              Indonesia 99,Kalimantan Jawa Sumatera
+            </li>
+            <li style="list-style: none">
+              <i class="fa-solid fa-phone"></i> 08123456689128
+            </li>
+            <li style="list-style: none">
+              <i class="fa-solid fa-envelope"></i>
+              bestcarservice@service.com
+            </li>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="p-3 bg-dark text-white text-center">
+      <div class="container">
+        <p class="mb-0">Copyright &copy; 2022 kelompokstupen</p>
+      </div>
+    </footer>
     <!-- BOOTSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
