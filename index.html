@@ -24,19 +24,19 @@
     />
 
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
+      body {
+        font-family: "Arvo", serif;
+      }
       a {
         color: #000;
         list-style: none;
         text-decoration: none;
-      }
-
-      a:hover {
-        color: white;
       }
     </style>
   </head>
@@ -98,13 +98,16 @@
       <div class="container py-5">
         <div class="d-sm-flex align-item-center justify-content-between py-5">
           <div class="">
-            <h3 class="my-4">Make a car checkup in your Service</h3>
-            <p class="lead my-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              perspiciatis eveniet itaque quae beatae commodi quibusdam qui
-              quidem ab iure!
+            <h1 class="my-4">Make a car checkup in your Service</h1>
+            <p class="my-4 fw-normal fs-6">
+              By joining BestCarService member, you can easily book services
+              only through the application or website. So, you can save time and
+              don't have to worry about service costs that suddenly swell while
+              at the workshop.
             </p>
-            <button class="btn btn-outline-dark">Check</button>
+            <button class="btn btn-outline-dark" id="btnJumbotron">
+              Check
+            </button>
           </div>
           <a href="">
             <img src="img/car.png" alt="" width="450px" />
@@ -114,6 +117,70 @@
     </section>
 
     <!-- SECTION B PRODUCT FEATURES 1 & 2 -->
+    <!-- service -->
+    <section class="p-5 text-center" id="service">
+      <div class="container">
+        <div class="">
+          <h1 class="my-4">-- Our Service --</h1>
+          <div class="col-md">
+            <div class="card p-2 mb-3 border-dark">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa fa-car-crash"></i>
+                </div>
+                <h3 class="card-title">Car Service</h3>
+                <p class="card-text">
+                  Car service with us is the best solution, because we are
+                  trusted by several members
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card p-2 mb-3 border-dark">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa fa-car-on"></i>
+                </div>
+                <h3 class="card-title">Car Repair</h3>
+                <p class="card-text">
+                  We have repaired many cars and the results are quite
+                  satisfying several customers
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card p-2 mb-3 border-dark">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa fa-car-rear"></i>
+                </div>
+                <h3 class="card-title">Car Wash</h3>
+                <p class="card-text">
+                  Some customers give reviews that after the car is washed here
+                  they are quite satisfied
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card p-2 border-dark">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa fa-person"></i>
+                </div>
+                <h3 class="card-title">Member</h3>
+                <p class="card-text">
+                  You will get several advantages after registering as a member
+                  that other customers don't get
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- client -->
     <section class="p-5" id="client">
       <div class="container py-3">
@@ -165,74 +232,6 @@
         </div>
       </div>
     </section>
-    <!-- service -->
-    <section class="p-3 text-center" id="service">
-      <div class="container py-5">
-        <div class="py-5">
-          <h1 class="my-4">-- Our Service --</h1>
-          <div class="col-md">
-            <div class="card p-2 mb-3">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="fa fa-car-crash"></i>
-                </div>
-                <h3 class="card-title">Car Service</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Harum quam porro nisi ex ipsa qui consequatur maxime
-                  reprehenderit, ipsam officiis.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="card p-2 mb-3">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="fa fa-car-on"></i>
-                </div>
-                <h3 class="card-title">Car Repair</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Explicabo nulla, quam commodi repudiandae libero laudantium
-                  facere molestias quaerat quod aliquam.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="card p-2 mb-3">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="fa fa-car-rear"></i>
-                </div>
-                <h3 class="card-title">Car Wash</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellendus amet sunt distinctio, totam autem id consectetur!
-                  Maxime sapiente temporibus tempora.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="card p-2">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="fa fa-person"></i>
-                </div>
-                <h3 class="card-title">Member</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquid nobis similique eius harum nihil doloribus repudiandae
-                  itaque reiciendis perspiciatis ex?
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- SECTION C ABOUT & PRICING -->
     <!-- about -->
@@ -251,18 +250,11 @@
             /></a>
           </div>
           <div class="col-md">
-            <h2>About Us</h2>
+            <h2>BestCarService</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut
-              id officia quidem architecto velit molestiae expedita fugit saepe
-              impedit rem, assumenda soluta vero a suscipit repellendus
-              distinctio delectus voluptates nesciunt nulla?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut
-              id officia quidem architecto velit molestiae expedita fugit saepe
-              impedit rem, assumenda soluta vero a suscipit repellendus
-              distinctio delectus voluptates nesciunt nulla?
+              BestCarService is a car service booking application that makes it
+              easy for you to find services such as oil changes, tire changes,
+              tune-ups, and car washes.
             </p>
             <a href="" class="btn btn-outline-dark">Read More</a>
           </div>
@@ -275,10 +267,9 @@
         <div class="row text-center g-4">
           <h1 class="text-center">-- Our Pricing --</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, quasi
-            impedit nostrum deleniti earum laborum dignissimos? Modi tempora
-            voluptatem vero harum autem, illo ducimus mollitia, numquam
-            perferendis quidem atque eveniet.
+            we provide the best price for each package and the quality is
+            guaranteed. the package consists of standard, professional, premium.
+            choose freely according to your wishes
           </p>
           <div class="col-md">
             <div class="card bg-dark text-light p-2">
@@ -404,40 +395,47 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 mt-2">
             <h5>BestCarService</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
-              illum!
+            <p class="text-black-50">
+              BestCarService is a car service booking application
             </p>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-solid fa-map"></i></a>
+            <a href="#" class="text-black-50"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="#" class="text-black-50"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="text-black-50"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="text-black-50"
+              ><i class="fa-solid fa-map"></i
+            ></a>
           </div>
           <div class="col-lg-3 col-md-6 mt-2">
             <h5>Services</h5>
-            <li><a href="#">Car Service</a></li>
-            <li><a href="#">Car Repair</a></li>
-            <li><a href="#">Car Wash</a></li>
-            <li><a href="#">Car Maintenance</a></li>
+            <li><a href="#" class="text-black-50">Car Service</a></li>
+            <li><a href="#" class="text-black-50">Car Repair</a></li>
+            <li><a href="#" class="text-black-50">Car Wash</a></li>
+            <li><a href="#" class="text-black-50">Car Maintenance</a></li>
           </div>
           <div class="col-lg-3 col-md-6 mt-2">
             <h5>Page Links</h5>
-            <li><a href="#client">Our Client</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#pricing">Our Pricing</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a class="text-black-50" href="#client">Our Client</a></li>
+            <li><a class="text-black-50" href="#service">Service</a></li>
+            <li><a class="text-black-50" href="#about">About Us</a></li>
+            <li><a class="text-black-50" href="#pricing">Our Pricing</a></li>
+            <li><a class="text-black-50" href="#contact">Contact Us</a></li>
           </div>
           <div class="col-lg-3 col-md-6 mt-2">
             <h5>Location</h5>
-            <li style="list-style: none">
+            <li class="text-black-50" style="list-style: none">
               <i class="fa-solid fa-location-dot"></i>
               Indonesia 99,Kalimantan Jawa Sumatera
             </li>
-            <li style="list-style: none">
+            <li class="text-black-50" style="list-style: none">
               <i class="fa-solid fa-phone"></i> 08123456689128
             </li>
-            <li style="list-style: none">
+            <li class="text-black-50" style="list-style: none">
               <i class="fa-solid fa-envelope"></i>
               bestcarservice@service.com
             </li>
