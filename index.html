@@ -38,6 +38,33 @@
         list-style: none;
         text-decoration: none;
       }
+      .home {
+        background: #CDF0EA;
+      }
+      .card {
+        background: #CDF0EA;
+      }
+      .client {
+        background: #CDF0EA;
+      }
+      .pricing {
+        background: #CDF0EA;
+      }
+      .footer {
+        background: #CDF0EA; 
+      }
+      .footer p {
+        color: rgb(95, 94, 94);
+      }
+      .footer a {
+        color: rgb(95, 94, 94);
+      }
+      .footer a:hover {
+        color: rgb(166, 163, 163);
+      }
+      .footer li {
+        color: rgb(95, 94, 94);
+      }
     </style>
   </head>
   <body>
@@ -86,7 +113,7 @@
             >
               Log in
             </button>
-            <button class="btn btn-outline-light rounded-pill" type="submit">
+            <button class="btn btn-light rounded-pill" type="submit">
               Signup
             </button>
           </form>
@@ -94,7 +121,7 @@
       </div>
     </nav>
     <!-- section home -->
-    <section class="text-dark p-5 text-center text-sm-start" id="home">
+    <section class="text-dark p-5 text-center text-sm-start home" id="home">
       <div class="container py-5">
         <div class="d-sm-flex align-item-center justify-content-between py-5">
           <div class="row">
@@ -105,7 +132,7 @@
                 only through...
               </p>
               <button
-                class="btn btn-outline-dark"
+                class="btn btn-secondary"
                 id="btnJumbotron"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -289,7 +316,7 @@
       </div>
     </section>
     <!-- client -->
-    <section class="p-5" id="client">
+    <section class="p-5 client" id="client">
       <div class="container py-3">
         <div class="row text-center g-4">
           <div class="col-md">
@@ -363,13 +390,13 @@
               easy for you to find services such as oil changes, tire changes,
               tune-ups, and car washes.
             </p>
-            <a href="" class="btn btn-outline-dark">Read More</a>
+            <a href="" class="btn btn-secondary">Read More</a>
           </div>
         </div>
       </div>
     </section>
     <!-- pricing -->
-    <section class="p-5" id="pricing">
+    <section class="p-5 pricing" id="pricing">
       <div class="container py-5">
         <div class="row text-center g-4">
           <h1 class="text-center">-- Our Pricing --</h1>
@@ -385,8 +412,8 @@
                 <h2 class="card-text">Rp. 500.000</h2>
                 <p><i class="fa fa-car-rear"></i> Car Wash</p>
                 <p><i class="fa fa-car-on"></i> Car Repair</p>
-                <p><i class="fa fa-car-crash"></i> Car Service</p>
-                <p><i class="fa fa-gear"></i> Maintenance</p>
+                <p><i class="fa fa-car-crash"></i> <s> Car Service</s></p>
+                <p><i class="fa fa-gear"></i> <s> Maintenance</s></p>
                 <a
                   href=""
                   class="btn btn-outline-light"
@@ -405,7 +432,7 @@
                 <p><i class="fa fa-car-rear"></i> Car Wash</p>
                 <p><i class="fa fa-car-on"></i> Car Repair</p>
                 <p><i class="fa fa-car-crash"></i> Car Service</p>
-                <p><i class="fa fa-gear"></i> Maintenance</p>
+                <p><i class="fa fa-gear"></i> <s> Maintenance</s></p>
                 <a
                   href=""
                   class="btn btn-outline-light"
@@ -524,7 +551,7 @@
             <div class="row mb-3">
               <div class="col-sm">
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
                   id="inputemail"
                   placeholder="Your Name"
@@ -542,7 +569,7 @@
             <div class="row mb-3">
               <div class="col-sm">
                 <input
-                  type="email"
+                  type="number"
                   class="form-control"
                   id="inputemail"
                   placeholder="Phone"
@@ -550,7 +577,7 @@
               </div>
               <div class="col-sm">
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
                   id="inputemail"
                   placeholder="Car Model & Year"
@@ -560,7 +587,7 @@
             <div class="row mb-3">
               <div class="col-sm">
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
                   id="inputemail"
                   placeholder="Your Message"
@@ -568,7 +595,7 @@
               </div>
             </div>
             <div class="row">
-              <a href="" class="btn btn-outline-dark">Send Message</a>
+              <a href="" class="btn btn-secondary">Send Message</a>
             </div>
           </div>
           <div class="col-md">
@@ -579,52 +606,52 @@
     </section>
 
     <!-- footer -->
-    <footer id="contact" class="page-footer p-5 text-md-left bg-secondary">
+    <footer id="contact" class="page-footer p-5 text-md-left footer">
       <div class="container py-5">
         <div class="row">
           <div class="col-lg-3 col-md-6 mt-2">
             <h5>BestCarService</h5>
-            <p class="text-black-50">
+            <p class="text">
               BestCarService is a car service booking application
             </p>
-            <a href="#" class="text-black-50"
+            <a href="#" class="text"
               ><i class="fa-brands fa-twitter"></i
             ></a>
-            <a href="#" class="text-black-50"
+            <a href="#" class="text"
               ><i class="fa-brands fa-facebook"></i
             ></a>
-            <a href="#" class="text-black-50"
+            <a href="#" class="text"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="#" class="text-black-50"
+            <a href="#" class="text"
               ><i class="fa-solid fa-map"></i
             ></a>
           </div>
           <div class="col-lg-3 col-md-6 mt-2">
             <h5>Services</h5>
-            <li><a href="#" class="text-black-50">Car Service</a></li>
-            <li><a href="#" class="text-black-50">Car Repair</a></li>
-            <li><a href="#" class="text-black-50">Car Wash</a></li>
-            <li><a href="#" class="text-black-50">Car Maintenance</a></li>
+            <li><a href="#" class="text">Car Service</a></li>
+            <li><a href="#" class="text">Car Repair</a></li>
+            <li><a href="#" class="text">Car Wash</a></li>
+            <li><a href="#" class="text">Car Maintenance</a></li>
           </div>
           <div class="col-lg-3 col-md-6 mt-2">
             <h5>Page Links</h5>
-            <li><a class="text-black-50" href="#client">Our Client</a></li>
-            <li><a class="text-black-50" href="#service">Service</a></li>
-            <li><a class="text-black-50" href="#about">About Us</a></li>
-            <li><a class="text-black-50" href="#pricing">Our Pricing</a></li>
-            <li><a class="text-black-50" href="#contact">Contact Us</a></li>
+            <li><a class="text" href="#client">Our Client</a></li>
+            <li><a class="text" href="#service">Service</a></li>
+            <li><a class="text" href="#about">About Us</a></li>
+            <li><a class="text" href="#pricing">Our Pricing</a></li>
+            <li><a class="text" href="#contact">Contact Us</a></li>
           </div>
           <div class="col-lg-3 col-md-6 mt-2">
             <h5>Location</h5>
-            <li class="text-black-50" style="list-style: none">
+            <li class="text" style="list-style: none">
               <i class="fa-solid fa-location-dot"></i>
               Indonesia 99,Kalimantan Jawa Sumatera
             </li>
-            <li class="text-black-50" style="list-style: none">
+            <li class="text" style="list-style: none">
               <i class="fa-solid fa-phone"></i> 08123456689128
             </li>
-            <li class="text-black-50" style="list-style: none">
+            <li class="text" style="list-style: none">
               <i class="fa-solid fa-envelope"></i>
               bestcarservice@service.com
             </li>
