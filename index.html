@@ -23,6 +23,7 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- internal css -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
       * {
@@ -39,19 +40,16 @@
         text-decoration: none;
       }
       .home {
-        background: #CDF0EA;
+        background: #cdf0ea;
       }
       .card {
-        background: #CDF0EA;
-      }
-      .client {
-        background: #CDF0EA;
+        background: #cdf0ea;
       }
       .pricing {
-        background: #CDF0EA;
+        background: #cdf0ea;
       }
       .footer {
-        background: #CDF0EA; 
+        background: #cdf0ea;
       }
       .footer p {
         color: rgb(95, 94, 94);
@@ -64,6 +62,23 @@
       }
       .footer li {
         color: rgb(95, 94, 94);
+      }
+      #btn {
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        background-color: #3b4249;
+        color: #fff;
+        padding: 10px;
+        z-index: 99;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        border-radius: 60px;
+        /* display: none; */
+      }
+      #btn:hover {
+        background-color: #fff;
+        color: #3b4249;
       }
     </style>
   </head>
@@ -132,7 +147,7 @@
                 only through...
               </p>
               <button
-                class="btn btn-secondary"
+                class="btn btn-outline-secondary"
                 id="btnJumbotron"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
@@ -252,12 +267,12 @@
 
     <!-- SECTION B PRODUCT FEATURES 1 & 2 -->
     <!-- service -->
-    <section class="p-5 text-center" id="service">
+    <section class="p-3 text-center bg-dark" id="service">
       <div class="container">
         <div class="">
-          <h1 class="my-4">-- Our Service --</h1>
+          <h1 class="my-4 text-light">-- Our Service --</h1>
           <div class="col-md">
-            <div class="card p-2 mb-3 border-dark">
+            <div class="card p-2 mb-3 border-dark border-3">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="fa fa-car-crash"></i>
@@ -271,7 +286,7 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="card p-2 mb-3 border-dark">
+            <div class="card p-2 mb-3 border-dark border-3">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="fa fa-car-on"></i>
@@ -285,7 +300,7 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="card p-2 mb-3 border-dark">
+            <div class="card p-2 mb-3 border-dark border-3">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="fa fa-car-rear"></i>
@@ -299,7 +314,7 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="card p-2 border-dark">
+            <div class="card p-2 border-dark border-3">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="fa fa-person"></i>
@@ -316,11 +331,11 @@
       </div>
     </section>
     <!-- client -->
-    <section class="p-5 client" id="client">
+    <section class="p-3 client bg-dark" id="client">
       <div class="container py-3">
         <div class="row text-center g-4">
           <div class="col-md">
-            <div class="card bg-dark text-light p-2">
+            <div class="card text-dark p-2">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="fa fa-car-crash"></i>
@@ -331,7 +346,7 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="card bg-dark text-light p-2">
+            <div class="card text-dark p-2">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="fa fa-car-on"></i>
@@ -342,7 +357,7 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="card bg-dark text-light p-2">
+            <div class="card text-dark p-2">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="fa fa-car-rear"></i>
@@ -353,7 +368,7 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="card bg-dark text-light p-2">
+            <div class="card text-dark p-2">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
                   <i class="fa fa-person"></i>
@@ -396,17 +411,17 @@
       </div>
     </section>
     <!-- pricing -->
-    <section class="p-5 pricing" id="pricing">
+    <section class="p-5 pricing bg-dark" id="pricing">
       <div class="container py-5">
         <div class="row text-center g-4">
-          <h1 class="text-center">-- Our Pricing --</h1>
-          <p>
+          <h1 class="text-center text-light">-- Our Pricing --</h1>
+          <p class="text-light">
             we provide the best price for each package and the quality is
             guaranteed. the package consists of standard, professional, premium.
             choose freely according to your wishes
           </p>
           <div class="col-md">
-            <div class="card bg-dark text-light p-2">
+            <div class="card p-2" style="background-color: #cdf0ea">
               <div class="card-body text-center">
                 <h4 class="card-title">Standard</h4>
                 <h2 class="card-text">Rp. 500.000</h2>
@@ -416,7 +431,7 @@
                 <p><i class="fa fa-gear"></i> <s> Maintenance</s></p>
                 <a
                   href=""
-                  class="btn btn-outline-light"
+                  class="btn btn-outline-dark"
                   data-bs-toggle="modal"
                   data-bs-target="#buymodal"
                   >Buy</a
@@ -425,7 +440,7 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="card bg-dark text-light p-2">
+            <div class="card p-2" style="background-color: #cdf0ea">
               <div class="card-body text-center">
                 <h4 class="card-title">Professional</h4>
                 <h2 class="card-text">Rp. 1.000.000</h2>
@@ -435,7 +450,7 @@
                 <p><i class="fa fa-gear"></i> <s> Maintenance</s></p>
                 <a
                   href=""
-                  class="btn btn-outline-light"
+                  class="btn btn-outline-dark"
                   data-bs-toggle="modal"
                   data-bs-target="#buymodal"
                   >Buy</a
@@ -444,7 +459,7 @@
             </div>
           </div>
           <div class="col-md">
-            <div class="card bg-dark text-light p-2">
+            <div class="card p-2" style="background-color: #cdf0ea">
               <div class="card-body text-center">
                 <h4 class="card-title">Premium</h4>
                 <h2 class="card-text">Rp. 1.500.000</h2>
@@ -454,7 +469,7 @@
                 <p><i class="fa fa-gear"></i> Maintenance</p>
                 <a
                   href=""
-                  class="btn btn-outline-light"
+                  class="btn btn-outline-dark"
                   data-bs-toggle="modal"
                   data-bs-target="#buymodal"
                   >Buy</a
@@ -614,18 +629,10 @@
             <p class="text">
               BestCarService is a car service booking application
             </p>
-            <a href="#" class="text"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
-            <a href="#" class="text"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="#" class="text"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="#" class="text"
-              ><i class="fa-solid fa-map"></i
-            ></a>
+            <a href="#" class="text"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="text"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="text"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="text"><i class="fa-solid fa-map"></i></a>
           </div>
           <div class="col-lg-3 col-md-6 mt-2">
             <h5>Services</h5>
@@ -665,11 +672,20 @@
         <p class="mb-0">Copyright &copy; 2022 kelompokstupen</p>
       </div>
     </footer>
+    <a href="" id="btn"><i class="fa-solid fa-arrow-up"></i></a>
+
     <!-- BOOTSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+      });
+    </script>
   </body>
 </html>
