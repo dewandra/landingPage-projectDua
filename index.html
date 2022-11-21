@@ -39,6 +39,9 @@
         list-style: none;
         text-decoration: none;
       }
+      .navbar {
+        z-index: 3;
+      }
       .home {
         background: #cdf0ea;
       }
@@ -82,7 +85,7 @@
   <body>
     <!-- SECTION A HEADER & BANNER -->
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed w-100">
       <div class="container">
         <a class="navbar-brand" href="#">BestCarService</a>
         <button
@@ -267,7 +270,7 @@
     <section class="p-3 text-center bg-dark" id="service">
       <div class="container">
         <div class="">
-          <h1 class="my-4 text-light">-- Our Service --</h1>
+          <h1 class="my-5 text-light">-- Our Service --</h1>
           <div class="col-md">
             <div class="card p-2 mb-3 border-dark border-3">
               <div class="card-body text-center">
